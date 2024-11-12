@@ -1,6 +1,8 @@
 import React from 'react';
 import { ArrowRight, BookOpen, Target, Lightbulb,Calendar,Newspaper  } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import banner1 from '../img/banner1.png';
+import frontisFiis from '../img/frontis_fiis.png'; 
 
 const Home = () => {
   return (
@@ -10,7 +12,7 @@ const Home = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("src/img/banner1.png")',
+            backgroundImage: `url(${banner1})`,
           }}
         >
           <div className="absolute inset-0 bg-black/50" />
@@ -51,7 +53,7 @@ const Home = () => {
           </div>
           <div className="relative rounded-lg overflow-hidden shadow-xl">
             <img
-              src="src/img/frontis_fiis.png"
+              src={frontisFiis}
               alt=" "
               className="w-full h-full object-cover"
             />
